@@ -29,19 +29,27 @@
                 border-radius:10px;
                 border-bottom:3px solid black;
             }
-            #countdown{
-                font-size:48px;
-            }
-            #daylist{
+            #explain{
                 font-size:24px;
-            }
-            #day{
-                font-size:24px
             }
         </style>
     </head>
     <body>
-        <h1>鬼ごっこ</h1>
+        <p id="title">鬼ごっこ</p>
+
+        <a href="index.html">ホームに戻る＞＞</a>
+        <a href="">会場（準備中）</a>
+
+        <p id="subtitle">説明</p>
+        <p id="explain">鬼と逃走者に分かれます。公共交通機関を使って逃走者が鬼から逃げ回ります。</p>
+        <p id="subtitle">参加者（敬称略）</p>
+        <ul>
+            <li>真紅の1号線＠元御堂筋線ニキ</li>
+            <li>美女美術大学の大学生</li>
+            <li>与一</li>
+            <li>神前＠映画ドラえもん</li>
+        </ul>
+
         <script>
         const targetDate=new Date(2026,2,1,0,0,0).getTime();
         const timer=setInterval(()=>{
