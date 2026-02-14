@@ -49,34 +49,5 @@
             <li>与一</li>
             <li>神前＠映画ドラえもん</li>
         </ul>
-
-        <script>
-        const targetDate=new Date(2026,2,1,0,0,0).getTime();
-        const timer=setInterval(()=>{
-            const now=new Date().getTime();
-            const distance=targetDate-now;
-
-            if (distance<=0){
-                clearInterval(timer);
-                document.getElementById("countdown").textContent="開幕";
-                return;
-            }
-
-            const days=Math.floor(distance/(1000*60*60*24));
-            const hours=Math.floor((distance/(1000*60*60))%24);
-            const minutes=Math.floor((distance/(1000*60))%60);
-            const seconds=Math.floor((distance/1000)%60);
-
-            function two(num){
-                return num.toString().padStart(2,"0")
-            }
-
-            document.getElementById("countdown").textContent=
-                two(days)+"日"+
-                two(hours)+"時間"+
-                two(minutes)+"分"+
-                two(seconds)+"秒";
-        },1000);
-        </script>
     </body>
 </html>
