@@ -7,14 +7,33 @@
             body{
                 font-family:"Arial",sans-serif;
             }
+            a{
+                font-size:20px;
+                display:inline-block;
+                background:rgb(179,236,255);
+                color:black;
+                padding:8px 16px;
+                border-radius:16px;
+                text-decoration:none;
+            }
+            table{
+                border-collapse:collapse;
+            }
             #title{
                 font-size:60px;
             }
             #subtitle{
                 font-size:36px;
+                text-shadow:2px 2px 4px rgba(128, 128, 128, 0.5);
+                background-color:rgb(179,236,255);
+                border-radius:10px;
+                border-bottom:3px solid black;
             }
             #countdown{
                 font-size:48px;
+            }
+            #day{
+                font-size:24px
             }
         </style>
     </head>
@@ -23,11 +42,15 @@
             <p>空想オリンピック2026 in空鉄</p>
         </div>
         <p id="subtitle">開幕カウントダウン</p>
-        <div id="countdown">
-        </div>
+        <div id="countdown"></div>
+
+        <p id="subtitle">日程</p>
+        <p>エントリー：2/13〜2/27</p>
+        <p>大会期間：3/1〜5/27</p>
+        <p>表彰式：5/28〜5/29</p>
 
         <p id="subtitle">会場一覧</p>
-        <a href="https://ku-tetsu.net/477545.html">メイン会場に行く</a>
+        <a href="https://ku-tetsu.net/477545.html">メイン会場に行く＞＞</a>
 
         <p id="subtitle">部門一覧</p>
         <table border="1">
@@ -109,45 +132,112 @@
                 <td>あまり見ない企画。どんななぞが隠されているのか。</td>
             </tr>
         </table>
-        <p>部門は追加する予定です。</p>
-        <p>開催日程は変更になる可能性があります。</p>
+        <p>※開催日程は変更になる可能性があります。</p>
 
-        <p id="subtitle">参加者一覧</p>
+        <p id="subtitle">参加者</p>
         <table border="1">
             <tr>
                 <th>登録名</th>
-                <th>参加する部門</th>
+                <th>１</th>
+                <th>２</th>
+                <th>３</th>
+                <th>４</th>
+                <th>５</th>
+                <th>６</th>
+                <th>７</th>
+                <th>８</th>
+                <th>９</th>
+                <th>10</th>
             </tr>
             <tr>
-                <td>御堂筋線ニキ【豊中の民】</td>
-                <td>鉄道前期、鉄道後期、都道府県</td>
+                <td>真紅の1号線＠元御堂筋線ニキ</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
             </tr>
             <tr>
                 <td>章旗ボール</td>
-                <td>鉄道後期もしくは道路前期、空港建設</td>
+                <td></td>
+                <td></td>
+                <td>？</td>
+                <td>？</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>◯</td>
+                <td></td>
             </tr>
             <tr>
                 <td>美女美術大学の大学生</td>
-                <td>鉄道後期もしくは道路前期、空港建設</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td></td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
             </tr>
             <tr>
                 <td>与一</td>
-                <td>鬼ごっこ、鉄道前期、都道府県</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>◯</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>konbu＠ここに何書けば</td>
-                <td>鉄道前期、空港建設</td>
+                <td></td>
+                <td>◯</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>◯</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>神前＠映画ドラえもん</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
+                <td>◯</td>
             </tr>
         </table>
 
         <p id="subtitle">お問い合わせ</p>
-        <p>情報が間違っていれば、お気軽に空想鉄道のメセボからお問い合わせください。</p>
-        <p>更新に時間がかかる場合がありますが、できるだけ早く対応します。</p>
+        <p>情報が間違っていれば、お気軽に空想鉄道のメセボからお問い合わせください。更新に時間がかかる場合がありますが、できるだけ早く対応します。</p>
 
         <p id="subtitle">運営からのお知らせ</p>
-        <h3>2/13</h3>
+        <p id="day">2/14</p>
+        <p>CSSを追加しました。</p>
+        <p id="day">2/13</p>
         <p>大幅に更新しました。</p>
-        <h3>2/12</h3>
+        <p id="day">2/12</p>
         <p>このサイトを開設しました。</p>
         <script>
         const targetDate=new Date(2026,2,1,0,0,0).getTime();
