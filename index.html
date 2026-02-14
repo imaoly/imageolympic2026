@@ -13,6 +13,10 @@
             a{
                 text-decoration:none;
             }
+            .titlearea{
+                display:flex;
+                align-items:flex-end;
+            }
             #title{
                 font-size:60px;
             }
@@ -35,6 +39,9 @@
             #countdown{
                 font-size:48px;
             }
+            .line{
+                border-top:3px double black;
+            }
             #daylist{
                 font-size:24px;
             }
@@ -44,7 +51,10 @@
         </style>
     </head>
     <body>
-        <p id="title">空想オリンピック2026 in空鉄</p>
+        <div class="titlearea">
+            <p id="title">空想オリンピック2026 in空鉄</p>
+            <a id="link" href="hello.html">運営あいさつ</a>
+        </div>
         <p id="subtitle">開幕カウントダウン</p>
         <div id="countdown"></div>
 
@@ -214,7 +224,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td>◯</td>
                 <td></td>
                 <td></td>
                 <td>◯</td>
@@ -233,6 +243,7 @@
                 <td>◯</td>
                 <td>◯</td>
             </tr>
+
             <tr>
                 <td>鉄オタその1</td>
                 <td>◯</td>
@@ -245,6 +256,19 @@
                 <td>◯</td>
                 <td>◯</td>
                 <td>◯</td>
+            </tr>
+            <tr class="line">
+                <td>参加人数</td>
+                <td>5</td>
+                <td>6</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+                <td>6</td>
+                <td>4</td>
+                <td>4</td>
+                <td>6</td>
+                <td>4</td>
             </tr>
         </table>
 
