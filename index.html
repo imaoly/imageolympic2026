@@ -43,6 +43,15 @@
             .line{
                 border-top:3px double black;
             }
+            .survey-box{
+                font-size:24px;
+                background-color:rgb(179,236,255);
+                border:2px solid rgb(179,236,255);
+                padding:20px;
+                border-radius:16px;
+                width:400px;
+                box-shadow:2px 2px 4px rgba(128, 128, 128, 0.5);
+            }
             #daylist{
                 font-size:24px;
             }
@@ -58,7 +67,6 @@
         </div>
         <p id="subtitle">開幕カウントダウン</p>
         <div id="countdown"></div>
-
         <p id="subtitle">日程</p>
         <div id="daylist">
             <p>参加：2/13〜2/27</p>
@@ -299,14 +307,17 @@
             </tr>
         </table>
 
-        <p id="subtitle">アンケート（試験機能）</p>
-        <p>試験中の機能です。完成までお待ちください。</p>
-        <form id="form">
-            <input name="name" placeholder="名前">
-            <input name="main" placeholder="内容">
-            <button type="submit">送信</button>
-        </form>
-        <p id="msg"></p>
+        <p id="subtitle">アンケート</p>
+        <p>実施中のアンケート（参加者以外は答えないでください）</p>
+        <p>質問：この特設サイトに追加してほしい機能を教えてください。</p>
+        <div class="formbox">
+            <form id="form">
+                <input name="name" placeholder="登録名">
+                <input name="main" placeholder="内容">
+                <button type="submit">送信</button>
+            </form>
+            <p id="msg"></p>
+        </div>
 
         <p id="subtitle">お問い合わせ</p>
         <p>情報が間違っていれば、お気軽に空想鉄道のメセボからお問い合わせください。更新に時間がかかる場合がありますが、できるだけ早く対応します。</p>
