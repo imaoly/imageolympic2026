@@ -301,6 +301,12 @@
 
         <p id="subtitle">アンケート（試験機能）</p>
         <p>試験中の機能です。完成までお待ちください。</p>
+        <form id="form">
+            <input name="登録名" placeholder="名前">
+            <input name="main" placeholder="内容">
+            <button type="submit">送信</button>
+        </form>
+        <p id="msg"></p>
 
         <p id="subtitle">お問い合わせ</p>
         <p>情報が間違っていれば、お気軽に空想鉄道のメセボからお問い合わせください。更新に時間がかかる場合がありますが、できるだけ早く対応します。</p>
@@ -339,6 +345,23 @@
                 two(minutes)+"分"+
                 two(seconds)+"秒";
         },1000);
+        </script>
+        <script>
+            document.getElementById("form").onsubmit=async(e)=>{
+                e.preventDefault();
+                
+                const data={
+                    name:e.target.name.value,
+                    main:e.target.main.value
+                };
+                
+                await fetch("https://script.google.com/macros/s/AKfycbwD3iWjv4yxm1_m7YywrL6DCgbgw-ofApA71Gzaskt1a7haOK6iLntjUPcP_dXAvRDX/exec",{
+                    method: "POST",
+                    body: JSON.stringify(data)
+                });
+                
+                document.getElementById("msg").textContent = "送信しました！";
+            };
         </script>
     </body>
 </html>
