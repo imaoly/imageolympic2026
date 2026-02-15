@@ -302,7 +302,7 @@
         <p id="subtitle">アンケート（試験機能）</p>
         <p>試験中の機能です。完成までお待ちください。</p>
         <form id="form">
-            <input name="登録名" placeholder="名前">
+            <input name="name" placeholder="名前">
             <input name="main" placeholder="内容">
             <button type="submit">送信</button>
         </form>
@@ -357,13 +357,14 @@
 
                 try{
                     await fetch("https://script.google.com/macros/s/AKfycbwiWnccG19YA2cxBoK2ERk4AlsTihiHWM94sJb-QYiVIbj4rXUrs3x140cdgM-_USyE/exec",{
-                        method: "POST",
-                        body: JSON.stringify(data)
+                        method:"POST",
+                        body:JSON.stringify(data)
                     });
                     document.getElementById("msg").textContent="送信完了";
                 }catch(err){
                     document.getElementById("msg").textContent="エラー発生";
                     console.log(err);
+                }
             };
         </script>
     </body>
