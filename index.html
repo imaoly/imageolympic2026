@@ -16,22 +16,24 @@
             }
             .titlearea{
                 display:flex;
-                align-items:flex-end;
+                align-items:right;
+                justify-content:right;
             }
             #title{
-                font-size:48px;
+                font-size:32px;
             }
             #subtitle{
-                font-size:36px;
+                font-size:24px;
+                padding: 8px 16px;
+                color: #000000;
+                background: #f8f8f8;
+                border-left: solid 5px rgb(95, 215, 255);
                 text-shadow:2px 2px 4px rgba(128, 128, 128, 0.5);
-                background-color:rgb(179,236,255);
-                border-radius:10px;
-                border-bottom:3px solid black;
             }
             #link{
                 font-size:24px;
                 display:inline-block;
-                background:rgb(179,236,255);
+                background:rgb(179, 236, 255);
                 color:black;
                 padding:8px 16px;
                 border-radius:16px;
@@ -39,6 +41,9 @@
             }
             #countdown{
                 font-size:48px;
+            }
+            p{
+                font-size:16px;
             }
             .line{
                 border-top:3px double black;
@@ -71,19 +76,18 @@
         </style>
     </head>
     <body>
+        <p id="title">空想オリンピック2026 in空鉄</p>
         <div class="titlearea">
-            <p id="title">空想オリンピック2026 in空鉄</p>
             <a id="link" href="hello.html">運営あいさつ</a>
             <a id="link" href="login.html">ログイン（試験中の機能）</a>
         </div>
         <p id="subtitle">開幕カウントダウン</p>
         <div id="countdown"></div>
         <p id="subtitle">日程</p>
-        <div id="daylist">
-            <p>参加：2/13〜2/27（終了）</p>
-            <p>期間：3/1〜5/27</p>
-            <p>表彰式：5/28〜5/29</p>
-        </div>
+        <p>参加：2/13〜2/27（終了）</p>
+        <p>期間：3/1〜5/27</p>
+        <p>表彰式：5/28〜5/29</p>
+        
 
         <p id="subtitle">部門一覧</p>
         <table border="1">
@@ -350,8 +354,6 @@
         <p>一部空シリを使わない企画</p>
 
         <p id="subtitle">運営からのお知らせ</p>
-        <p id="day">3/02</p>
-        <p>更新は、しばらくあまりできないと思います。</p>
         <p id="day">2/22</p>
         <p>主催が忙しいため、なぞときの開催日を3/11に延期しました。</p>
         <p id="day">2/14</p>
