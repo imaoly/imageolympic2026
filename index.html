@@ -19,7 +19,7 @@
                 align-items:flex-end;
             }
             #title{
-                font-size:60px;
+                font-size:48px;
             }
             #subtitle{
                 font-size:36px;
@@ -44,7 +44,7 @@
                 border-top:3px double black;
             }
             .formbox{
-                font-size:24px;
+                font-size:20px;
                 background-color:rgb(179,236,255);
                 border:2px solid rgb(179,236,255);
                 padding:20px;
@@ -53,12 +53,12 @@
                 box-shadow:2px 2px 4px rgba(128, 128, 128, 0.5);
             }
             .formbox input{
-                font-size:24px;
+                font-size:20px;
                 padding:12px;
                 border-radius:16px;
             }
             .formbox button{
-                font-size:24px;
+                font-size:20px;
                 padding:12px;
                 border-radius:16px;
             }
@@ -80,7 +80,7 @@
         <div id="countdown"></div>
         <p id="subtitle">日程</p>
         <div id="daylist">
-            <p>参加：2/13〜2/27</p>
+            <p>参加：2/13〜2/27（終了）</p>
             <p>期間：3/1〜5/27</p>
             <p>表彰式：5/28〜5/29</p>
         </div>
@@ -329,10 +329,9 @@
         </table>
 
         <p id="subtitle">アンケート</p>
-        <p>実施中のアンケート（参加者以外は答えないでください）</p>
         <div class="formbox">
             <form id="form">
-                <p>質問：この特設サイトに追加してほしい機能を教えてください。</p>
+                <p>この特設サイトに追加してほしい機能を教えてください。</p>
                 <input name="name" placeholder="登録名">
                 <input name="main" placeholder="内容">
                 <button type="submit">送信</button>
@@ -340,16 +339,14 @@
             <p id="msg"></p>
         </div>
         <p id="subtitle">試験中・計画中の機能</p>
-        <p>参加者ログイン</p>
-        <p>ご要望ページ</p>
-        <p>自動処理</p>
-        <p>表彰台</p>
-        <p>コミュニティスペース</p>
-
-        <p id="subtitle">お問い合わせ</p>
-        <p>情報が間違っていれば、お気軽に空想鉄道のメセボからお問い合わせください。更新に時間がかかる場合がありますが、できるだけ早く対応します。</p>
+        <p>参加者ログイン（実装予定：３月中旬～下旬）</p>
+        <p>自動処理（実装予定：４月上旬～中旬）</p>
+        <p>表彰台（実装予定：４月下旬？）</p>
+        <p>コミュニティスペース（実装予定：不明）</p>
 
         <p id="subtitle">運営からのお知らせ</p>
+        <p id="day">3/02</p>
+        <p>更新は、しばらくあまりできないと思います。</p>
         <p id="day">2/22</p>
         <p>主催が忙しいため、なぞときの開催日を3/11に延期しました。</p>
         <p id="day">2/14</p>
@@ -366,7 +363,7 @@
 
             if (distance<=0){
                 clearInterval(timer);
-                document.getElementById("countdown").textContent="開幕";
+                document.getElementById("countdown").textContent="開幕しました！";
                 return;
             }
 
